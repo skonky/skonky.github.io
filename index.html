@@ -1,6 +1,28 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<title>Redirecting to ndx.xyz</title>
-<!-- Ignore these.
-<meta http-equiv="refresh" content="0; URL=https://www.ndx.xyz/">
-<link rel="canonical" href="https://www.ndx.xyz/"> -->
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="dist/css/ping_response.css"/>
+
+  <title>Test Ping</title>
+</head>
+
+
+<body>
+
+<ul data-bind="foreach:servers">
+  <li> <a href="#" data-bind="text:name,attr:{href: 'http://'+name}">tester</a>
+  <span data-bind="text:status,css:status" style="margin-left:50px"></span>
+  </li>
+</ul>
+
+</body>
+
+<script type="text/javascript" src="knockout.js"></script>
+<script type="text/javascript" src="ping-function.js"></script>
