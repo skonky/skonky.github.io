@@ -50,5 +50,6 @@ var komodel = new PingModel(['localhost',
     'google.fr',
     'play.ndx.xyz',
     'ndx.xyz',
+    'ndx.xyz:28015'
     ]);
 ko.applyBindings(komodel);
