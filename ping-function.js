@@ -29,6 +29,30 @@ function ping(ip, callback) {
         }, 1500);
     }
 }
+var json = {
+  services: [
+    {
+      "name": "Website",
+      "description": "Our main website",
+      "url": "ndx.xyz"
+    },
+    {
+      "name": "Dexter",
+      "description": "The official NDX Community Discord bot",
+      "url": "ndx.xyz"
+    }
+    {
+      "name": "Minecraft Server",
+      "description": "Our semi-public Minecraft server",
+      "url": "play.ndx.xyz"
+    }
+    {
+      "name": "Rust Server",
+      "description": "Our public Rust server",
+      "url": "ndx.xyz:28015"
+    }
+  }]
+}
 var PingModel = function (servers) {
     var self = this;
     var myServers = [];
